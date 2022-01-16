@@ -1,0 +1,7 @@
+[
+  {"user_ids": [1, 2, 3, 285629080]},
+  {"and": [
+    {"msg_contains": ["hello", "darkness", "my", "old", "friend"]},
+    {"msg_contains": ["kek"]}
+  ]}
+]

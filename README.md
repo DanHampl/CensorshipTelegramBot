@@ -1,6 +1,7 @@
 # CensorshipTelegramBot
 
 ## Run the app
+To get your bot working, you will need your own token. To get ypur own bot with token, [contact the @BotFather](https://core.telegram.org/bots) on telegram.
 ### Run without GEM
 ```
 ruby ctb.rb <token> </path/to/config.json>

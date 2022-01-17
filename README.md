@@ -1,7 +1,43 @@
 # CensorshipTelegramBot
 
-## Config
+## Run the app
+### Run without GEM
+```
+ruby ctb.rb <token> </path/to/config.json>
+ruby ctb.rb 110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw /mnt/d/FIT/CensorshipTelegramBot/CTB/config.json
 
+or
+
+chmod +x ./ctb.rb
+./ctb.rb <token> </path/to/config.json>
+./ctb.rb 110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw /mnt/d/FIT/CensorshipTelegramBot/CTB/config.json
+```
+
+### Run with GEM
+```
+gem build ctb.gemspec
+gem install CensorshipTelegramBot-0.1.0.gem
+
+ctb <token> </path/to/config.json>
+ctb 110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw /mnt/d/FIT/CensorshipTelegramBot/CTB/config.json
+```
+
+## Tests
+```
+ruby -I test CTB/test/msg_match_test.rb
+```
+
+## Config
+### Example
+```
+[
+  {"user_ids": [1, 2, 3, 285629080]},
+  {"and": [
+    {"msg_contains": ["hello", "darkness", "my", "old", "friend"]},
+    {"msg_contains": ["kek"]}
+  ]}
+]
+```
 ### Keys
 #### and
 >All conditions need to be true
